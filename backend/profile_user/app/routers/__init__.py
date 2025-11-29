@@ -1,0 +1,1 @@
+from .profile_route import profile_router

@@ -1,0 +1,10 @@
+apiVersion: v1
+data:
+  .env.config: ALLOWED_ORIGINS=http://localhost:5173,http://www.xmas-k9s.tech,https://www.xmas-k9s.tech
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2025-10-31T22:15:13Z"
+  name: xmas-config
+  namespace: xmas-k9s
+  resourceVersion: "468286"
+  uid: a0b01cdd-93e8-4e6d-82d7-e32e066e208f

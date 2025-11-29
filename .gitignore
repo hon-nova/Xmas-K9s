@@ -1,0 +1,6 @@
+vertex.json
+docs/
+kubernetes/.env.secret
+kubernetes/.env.config
+kubernetes/secret.yaml
+kubernetes/vertex.json

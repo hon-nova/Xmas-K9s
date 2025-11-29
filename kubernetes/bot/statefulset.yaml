@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+   name: bot-sts
+   labels:
+     app: bot-sts-label
+   namespace: xmas-k9s
+spec:
+   replicas: 1
+   serviceName: bot-endpoint
+   selector:
+      matchLabels:
+         app: bot-service
+   template:
+      metadata:
+         labels:
+            app: bot-service
+      spec:        
+         containers:
+            - name: bot-docker-container
+              image: hondocker23/bot-svc-r:2025-10-31-1735
+              ports:
+               - containerPort: 2025
+              env:
+                - name: GOOGLE_APPLICATION_CREDENTIALS
+                  value: /etc/secret-xmas/vertex.json
+              volumeMounts:
+               - name: secret-volume
+                 mountPath: /etc/secret-xmas  
+                 readOnly: true
+               - name: config-volume
+                 mountPath: /etc/config-xmas
+                 readOnly: true
+         volumes:
+           - name: secret-volume
+             secret:
+               secretName: xmas-secret     
+           - name: config-volume
+             configMap:
+               name: xmas-config   
+                                        
+              
+               

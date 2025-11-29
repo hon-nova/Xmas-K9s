@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+   name: fe-endpoint
+   namespace: xmas-k9s
+spec:
+   selector:
+      app: fe-service
+   ports:
+   - port: 80
+     targetPort: 80   
+   type: ClusterIP   

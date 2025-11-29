@@ -1,0 +1,61 @@
+.bgXmasBlue {
+   background-color: #089ef5;
+}
+
+.bgNavXmasBlue {
+   background-color: #8cd4ff;
+}
+
+.textXmasBlue {
+   color: #089ef5;
+   font-weight: bold
+}
+.bgLightXmasBlue {
+   background-color: #e0f2fc;
+}
+
+.bgXmasStars {
+  background-image: radial-gradient(circle at 1px 1px, #fef9c3 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.card { 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.cardLeft {  
+  padding: 12px;
+}
+
+
+.cardRight img {
+  width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: transform 0.3s ease;
+}
+
+.xmasButton {
+  background-color: white; 
+  color: black;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+.xmasButton:active {
+  transform: translateY(0);
+}
+
+
+
+
+
+

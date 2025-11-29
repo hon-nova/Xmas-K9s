@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: profile-deployment
+  namespace: xmas-k9s
+spec:
+   replicas: 1
+   selector:
+      matchLabels:
+         app: profile-service
+   template:
+      metadata:   
+         labels:
+            app: profile-service
+      spec:
+         containers:
+         -  name: profile-docker-container
+            image: hondocker23/profile-svc-r:2025-11-02-1300
+            ports:
+            - containerPort: 2025                      
+            volumeMounts:
+              - name: secret-volume
+                mountPath: /etc/secret-xmas  
+                readOnly: true
+              - name: config-volume
+                mountPath: /etc/config-xmas
+                readOnly: true
+         volumes:
+           - name: secret-volume
+             secret:
+               secretName: xmas-secret     
+           - name: config-volume
+             configMap:
+               name: xmas-config   
+                

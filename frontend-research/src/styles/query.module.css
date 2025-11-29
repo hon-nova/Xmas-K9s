@@ -1,0 +1,24 @@
+.queryLeft{
+   background-color: #202123;
+}
+.queryRight {
+   background-color: #343541;
+}
+.queryMessage {
+   background-color: #444654;
+}
+
+:root{
+  --sidebar-bg: #202123;
+  --chat-bg:    #27282b;
+  --bubble-bg:  #e4f4fb;
+  --text:       black;
+}
+
+/* layout */
+.appSidebar { background-color: var(--sidebar-bg); }
+.appMain    { background-color: var(--chat-bg); color: var(--text); }
+
+/* messages */
+.msgAssistant { background-color: var(--bubble-bg); color: var(--text); border-radius: 12px; padding: 10px; }
+.msgUser      { background-color: white; color: black; border-radius: 12px; padding: 10px; }

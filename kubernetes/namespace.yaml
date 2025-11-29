@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  creationTimestamp: null
+  name: xmas-k9s
+spec: {}
+status: {}

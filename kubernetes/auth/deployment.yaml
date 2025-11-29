@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-deployment
+  namespace: xmas-k9s
+spec:
+   replicas: 1
+   selector:
+      matchLabels:
+         app: auth-service
+   template:
+      metadata:   
+         labels:
+            app: auth-service
+      spec:
+         containers:
+         -  name: auth-docker-container
+            image: hondocker23/auth-svc-r:2025-10-31-2215
+            ports:
+            - containerPort: 2025                      
+            volumeMounts:
+              - name: secret-volume
+                mountPath: /etc/secret-xmas  
+                readOnly: true
+              - name: config-volume
+                mountPath: /etc/config-xmas
+                readOnly: true
+         volumes:
+           - name: secret-volume
+             secret:
+               secretName: xmas-secret     
+           - name: config-volume
+             configMap:
+               name: xmas-config   
+                
