@@ -1,11 +1,9 @@
 import requests
 from core.config import settings
-# from config import settings
 
-# API_KEY = os.getenv("TICKETMASTER_KEY", "YOUR_CONSUMER_KEY_HERE")
-TICKETMASTER_CONSUMER_KEY="iL8Z5Y8L3YrsSy9PrtP4fJofNSttnArS"
-TICKETMASTER_CONSUMER_SECRET="whEM1NpqV4UXFXTC"
-# TICKETMASTER_CONSUMER_KEY = settings.TICKETMASTER_CONSUMER_KEY
+
+TICKETMASTER_CONSUMER_SECRET=settings.TICKETMASTER_CONSUMER_SECRET
+TICKETMASTER_CONSUMER_KEY = settings.TICKETMASTER_CONSUMER_KEY
 BASE_URL = "https://app.ticketmaster.com/discovery/v2/events.json"
 
 def fetch_events(keyword: str, country: str = "CA", city: str = None, 
