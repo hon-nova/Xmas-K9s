@@ -240,7 +240,12 @@ The project is designed to be deployed on a Kubernetes cluster, with local devel
 
 ## Demo
 
-[▶️ Watch Demo Video (1:05)](frontend-research/public/assets/output.mp4)
+<!-- [▶️ Watch Demo Video (1:05)](frontend-research/public/assets/output.mp4) -->
+
+<video width="800" controls>
+  <source src="frontend-research/public/assets/output.mp4" type="video/mp4">
+  Your browser doesn't support video playback.
+</video>
 
 ## Contributing
 
