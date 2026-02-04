@@ -39,23 +39,24 @@ The Xmas-K9s project aims to provide a seamless online platform for purchasing t
 
 This project leverages a modern stack for both its frontend and backend, ensuring a robust, scalable, and user-friendly experience.
 
-### Frontend
 
-*   **React.js:** A declarative, component-based JavaScript library for building user interfaces.
-*   **Vite:** A fast build tool that significantly improves the frontend development experience.
-*   **TypeScript:** A typed superset of JavaScript that compiles to plain JavaScript, enhancing code quality and maintainability.
-*   **Tailwind CSS:** A utility-first CSS framework for rapidly building custom designs.
-*   **Zustand:** A small, fast, and scalable state-management solution.
-
-### Backend
-
-*   **FastAPI:** A modern, fast (high-performance) web framework for building APIs with Python 3.9+ based on standard Python type hints.
 *   **Microservices Architecture:** The backend is designed with a microservices approach, promoting scalability and modularity.
 *   **PostgreSQL (on Neon):** A powerful, open-source object-relational database system, hosted on Neon for serverless capabilities.
 *   **SQLAlchemy ORM:** A Python SQL toolkit and Object Relational Mapper that gives developers the full power and flexibility of SQL.
 *   **LangGraph:** A library for building stateful, multi-actor applications with LLMs, used here for orchestrating the AI agent.
     *   **Features:** Human-in-the-Loop (HITL) and interruptions for dynamic AI agent interaction.
 *   **Google Model:** `gemini-2.5-flash` for the core AI agent functionalities.
+## Technologies Used
+
+To ensure a robust, scalable, and highly interactive experience, ConfidentTalk leverages a modern stack of technologies.
+
+| Category               | Technology / Library                                       | 
+| :----------------------| :--------------------------------------------------------- | 
+| **Frontend**           | React.js, Vite, TypeScript, Tailwind CSS, Zustand          | 
+| **Backend**            | Python, FastAPI                                            | 
+| **AI/NLP**             | Google Gemini gemini-2.5-flash                             | 
+| **Database**           | PostgreSQL (Neon)                                          | 
+| **Other Tools**        | LangGraph, Microservice, RESTful API, Docker, Kubernetes, Minikube | AI framework for stateful agent applications, containerization, orchestration. |
 
 ## Getting Started
 
@@ -233,19 +234,9 @@ The project is designed to be deployed on a Kubernetes cluster, with local devel
     ```
     Then, access the application via `http://your-app-domain.local` in your browser.
 
-
-<!-- ![Demo](frontend-research/public/assets/demo.gif) -->
-
-<!-- ![Demo](frontend-research/public/assets/output.mp4) -->
-
 ## Demo
 
 [▶️ Watch Demo Video (1:05)](https://youtu.be/pESyGT8LcAE)
-
-<!-- <video width="800" controls>
-  <source src="frontend-research/public/assets/output.mp4" type="video/mp4">
-  Your browser doesn't support video playback.
-</video> -->
 
 ## Contributing
 
@@ -259,5 +250,10 @@ We welcome contributions to the Xmas-K9s project! To contribute:
 
 ## Contact
 
-Hon Nguyen - [hon.mybcit@gmail.com](mailto:hon.mybcit@gmail.com)
-Project Link: [https://github.com/hon-nova/Xmas-K9s](https://github.com/hon-nova/Xmas-K9s)****
+## Technologies Used
+
+To ensure a robust, scalable, and highly interactive experience, ConfidentTalk leverages a modern stack of technologies.
+
+| Email                  |  [hon.mybcit@gmail.com](mailto:hon.mybcit@gmail.com)       | 
+| :----------------------| :--------------------------------------------------------- | 
+| **Project**            |   [Link](https://github.com/hon-nova/Xmas-K9s)             | 
